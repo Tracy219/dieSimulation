@@ -14,5 +14,8 @@ diceNumber = int_input("How many dice would you like to roll? ")
 
 for i in range(1, diceNumber + 1):
 	sides = int_input("How many sides on your die #{}? ".format(i))
-	result = randint(1, sides)
-	print("Die {} shows: {}".format (i, result))
+	if sides < 2:
+		print("Sorry, but the side number of the die can not less than 2.")
+	else:
+		result = randint(1, sides)
+		print("Die {} shows: {}".format (i, result))
