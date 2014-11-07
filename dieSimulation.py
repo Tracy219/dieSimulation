@@ -13,8 +13,12 @@ print("This program simulates rolling several dice.\n" \
 "The user can choose how many dice are rolled.\n")
 
 diceNumber = int_input("How many dice would you like to roll? ")
-sides = int_input("How many sides on your die? ")
+
 
 for i in range(1, diceNumber + 1):
-	result = randint(1, sides)
-	print("Die {} shows: {}".format (i, result))
+	sides = int_input("How many sides on your die #{}? ".format(i))
+	if sides < 2:
+		print("Sorry, but the side number of the die can not less than 2.")
+	else:
+		result = randint(1, sides)
+		print("Die {} shows: {}".format (i, result))
