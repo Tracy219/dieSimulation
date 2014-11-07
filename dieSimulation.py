@@ -2,6 +2,12 @@
 
 from random import randint
 from specialInput import int_input
+'''
+	specialInput is three special input functions. int_input can convert what you enter to
+	integer, if it failed, it will print "That's not a integer."
+	This program simulate a die roll.
+
+'''
 
 diceNumber = int_input("How many dice would you like to roll? ")
 sides = int_input("How many sides on your die? ")
