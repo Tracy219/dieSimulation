@@ -9,6 +9,9 @@ from specialInput import int_input
 
 '''
 
+print("This program simulates rolling several dice.\n" \
+"The user can choose how many dice are rolled.\n")
+
 diceNumber = int_input("How many dice would you like to roll? ")
 sides = int_input("How many sides on your die? ")
 
